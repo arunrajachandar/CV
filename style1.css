@@ -321,7 +321,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 1166px) {
+@media only screen and (max-width: 1166px) and (orientation: landscape) {
     /* For mobile phones: */
     .tabSideNavBar{
       visibility: hidden;
@@ -332,6 +332,41 @@ footer {
 
 .contents img {
   margin-left: 30%;
+  border: 2px;
+  border-style: double;
+  border-color: green;
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
+
+}
+
+
+.contents .content1 {
+  margin-top: 25px;
+}
+
+.tabNavBar .links {
+  margin: 0;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 1166px) and (orientation: portrait) {
+    /* For mobile phones: */
+    .tabSideNavBar{
+      visibility: hidden;
+      display: none;
+    }
+
+
+
+.contents img {
+  margin-left: 27%;
   border: 2px;
   border-style: double;
   border-color: green;
