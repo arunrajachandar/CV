@@ -1,7 +1,7 @@
 $(window).load(function() {
   $(".loader").fadeOut("slow");
 });
-$("button").click(function() {
-  $(".loader").fadeIn("slow");
-  $(".loader").fadeOut("slow");
+$("a").click(function() {
+  $(".loader").fadeIn("fast");
+  $(".loader").fadeOut("fast");
 });

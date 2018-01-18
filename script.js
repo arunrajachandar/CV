@@ -9,6 +9,7 @@ function openPage(evt, option) {
   for (i = 0; i < links.length; i++) {
     links[i].className = links[i].className.replace("active", "");
   }
+
   document.getElementById(option).style.display = "block";
 
 }

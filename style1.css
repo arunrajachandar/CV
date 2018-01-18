@@ -134,8 +134,8 @@ when we keep the cursor on them/when a button is being clicked.
 
   .NavBar-content {
     float: left;
-    background-color: white;
-    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    min-width: 250px;
     padding: 0;
     display: none;
     position: absolute;
