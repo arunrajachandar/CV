@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Profile</title>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<meta  name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<header>
+		My Profile
+	</header>
+
+	<div class="tabNavBar">
+		<button  class="links" onclick="window.location.href='index.html'">Home</button>
+		<button  class="links" onclick="alert('You are pressing the button for the same page')">Profile</button>
+		<button class="links" onclick="window.location.href='https://drive.google.com/uc?export=download&id=0B8Q5sPXAZVWHNFJPSlVPTUxDb28'">Download</button>
+		<div class="NavBar">
+<button onclick="myFunction()" class="SideNavButton links">NavBar</button>
+  <div id="myNavBar" class="NavBar-content">
+			<a href="#" onclick="openPage(event, 'Education')" id="defaultOpen">Education</a>
+			<a href="#" onclick="openPage(event, 'Projects')">Projects</a>
+			<a href="#" onclick="openPage(event, 'Certifications')">Certifications</a>
+			<a href="#" onclick="openPage(event, 'Publication')">Publication</a>
+			<a href="#" onclick="openPage(event, 'ProfessionalExp')">Professional Experience</a>
+			<a href="#" onclick="openPage(event, 'Personal-Info')">Personal Info</a>
+  </div>
+</div>
+	</div>
+	<!--
+	This tabSideNavBar represents the side navigation buttons,
+	Since I wanted to put up my bio in a categorical manner, I have kept Six buttons
+	I have used OnClick event for each button,
+	because I would want to show the content of each heading at the same element corresponding to the button being clicked in a dynamic way
+-->
+<div class="loader"></div>
+<div class="tabSideNavBar">
+	<button class="links" onclick="openPage(event, 'Education')" id="defaultOpen">Education</button>
+	<button class="links" onclick="openPage(event, 'Projects')">Projects</button>
+	<button class="links" onclick="openPage(event, 'Certifications')">Certifications</button>
+	<button class="links" onclick="openPage(event, 'Publication')">Publication</button>
+	<button class="links" onclick="openPage(event, 'ProfessionalExp')">Professional Experience</button>
+	<button class="links" onclick="openPage(event, 'Personal-Info')">Personal Info</button>
+</div>
+
+<div id="hoverNav" >
+	<a href="https://www.facebook.com/arunrajachandarr" id="fb" class="fa fa-facebook"></a>
+	<a href="https://www.linkedin.com/in/arunrajachandar/" id="ln" class="fa fa-linkedin"></a>
+</div>
+
+
+<div id="Education" class="content">
+	<h3 class="headings">Education</h3>
+	<table>
+		<tr><td>2013-2017</td><td><b>B. TECH (COMPUTER SCIENCE AND ENGINEERING)</b> at SRM University, Kattankulathur</td></tr>
+		<tr><td></td><td>CGPA - 7.8 on 10</td></tr>
+		<tr><td>2011-2013</td><td><b>HIGHER SECONDARY COURSE</b> at St. Paulś MHSS, Nellikuppam</td></tr>
+		<tr><td></td><td>Majoring in Computer Science, Math, Physics and Chemistry</td></tr>
+		<tr><td></td><td>12th Percentage - 72%</td></tr>
+		<tr><td>2006-2011</td><td><b>HIGH SCHOOL at St. Paulś MHSS</b>, Nellikuppam</td></tr>
+		<tr><td></td><td>10th Percentage - 74%</td></tr>
+	</table>
+</div>
+
+<div id="Certifications" class="content">
+	<h3 class="headings">Certifications</h3>
+	<div>
+		<ul>
+			<li >Undergone <b>Web Development Training (HTML&CSS, PHP, Advanced PHP & MySQLi)</b> on
+				Internshala for Six weeks.
+				<li >Undergone <b>SQL Fundamentals Course</b> on Sololearn.
+					<li >Participated in <b>Ethical Hacking workshop</b> conducted during AARUUSH 2013(Technical College
+						Fest).
+					</ul>
+				</div>
+			</div>
+
+			<div id="Projects" class="content">
+				<h3 class="headings">Projects</h3>
+				<table>
+					<tr><td><b>Mini-Project</b></td><td><b>Basic E-Commerce Site for Mobile Phone Sales</b></td></tr>
+					<tr><td></td><td>
+						<ul>
+							<li>This system uses highly secure Authentication login, so that only the registered users can have
+								access to it and it is highly configurable. Also, items can be added/removed to/from the cart as
+								per the needs of the user before the completion of purchase.
+								<li>Platforms used here are HTML& CSS, Bootstrap, MySQLi and PHP.
+								</ul></td></tr>
+								<tr><td><b>Major-Project</b></td><td><b>Naive Bayes Categorization Approach Using Class-Specific Features</b></td></tr>
+								<tr><td></td><td>
+									<ul>
+										<li>This project deals with data-sets related to Bikes. It aids the user of this application to find the
+											bike brandthat suit their budget and tastes. A single data-set consists of attributes of Bike such
+											asits colour, Price, Model number, Special features and performance parameters. NaiveBayes
+											classifier is used to classify the data-sets to an appropriate class with respect tothe attributes,
+											based on the probability score of each set of attributes associated with thedata-set.
+											<li>Platforms used here are R Programming for the Back-end and Shiny for the Frond-end.
+											</ul></td></tr>
+
+										</table>
+									</div>
+									<div id="Publication" class="content">
+										<h3 class="headings">Publication</h3>
+										<blockquote>
+											Arun Rajachandar R, Kamalesh AP, and K. Deeba. <em>“Naive Bayes Categorization Approach Using Class-Specific Features”</em>.
+											In: International Journal of Control Theory and Applications 10 (2017). ISSN: 0974-5572.
+										</blockquote>
+									</div>
+									<div id="ProfessionalExp" class="content">
+										<h3 class="headings">Professional Experience</h3>
+										<table>
+											<tr><td><b>July 19th, 2017 - Present</b></td><td><b>Analyst</b> at Capgemini, India</td></tr>
+											<tr><td>Domain</td><td>OracleApps</td></tr>
+											<tr><td>Skills</td><td>
+												<ul>
+													<li>SQL</li>
+													<li>PL/SQL Packages</li>
+													<li>Oracle Forms</li>
+													<li>Oracle Reports</li>
+													<li>Oracle E-Business Suite</li>
+												</ul>
+
+											</td></tr>
+											<tr><td colspan="2">It's been 4 months since I joined this firm. I have just been trained on those topics mentioned above.
+												<ul>
+													<li>As a part of the training, we had to make a project on Book Management System. Actually, we will be given a set of flat files with
+														unsorted data seperated by delimiters, we basically have to load those data, in a sorted manner, into the database. To acheive that,
+														we used <b>SQL Loader</b>. Then I created two seperate users and responsilities(i.e, clerk and user) on Oracle EBS,
+														where clerk can add/remove the books to/from the library whereas user will have access only to view the details of books and their availability.
+														And I used,<ol><li> <b>OracleForms</b> for the UI <li><b>OracleReports</b> for generating the summary of all the transactions happened<li><b>PLSQL packages and triggers</b> for the validations</ol>.
+
+															<li>Also I have a very good knowledge on ERP and its concepts.
+															</ul>
+														</td></tr>
+													</table>
+												</div>
+												<div id="Personal-Info" class="content">
+													<h3 class="headings">Personal Information</h3>
+													<table>
+														<tr><td>DOB</td><td>22/02/1996</td></tr>
+														<tr><td>Languages Known</td><td>English,Tamil</td></tr>
+														<tr><td>Permanent Address</td><td>No. 6, Jayalakshmi Nagar, Nellikuppam,
+															Cuddalore District, Tamil Nadu- 607105
+														</td></tr>
+														<tr><td>Mobile</td><td>[0]9629983177</td></tr>
+														<tr><td>Mail ID</td><td>arunrajachandar@gmail.com</td></tr>
+
+													</table>
+												</div>
+
+
+												<footer> &copy; Arun Rajachandar
+												</footer>
+
+												<script src="script.js" async></script>
+												<script src="status.js" async></script>
+
+											</body>
+											</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Home Page
+	</title>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<meta  name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<header>
+		My Profile
+	</header>
+	<!--
+	tabNavBar space contains three buttons in it,
+	One that's for the same page,
+	second will redirect you to another html which has my bio in it
+	third is to download my CV
+-->
+<div class="tabNavBar">
+	<button  class="links" onclick="alert('You are pressing the button for the same page')">Home</button>
+	<button  class="links" onclick="window.location.href='app.html'">Profile</button>
+	<button class="links" onclick="window.location.href='https://drive.google.com/uc?export=download&id=0B8Q5sPXAZVWHNFJPSlVPTUxDb28'">Download</button>
+</div>
+<!--
+The below div with id hoverNav,
+What it basically does is, I have made two hoverable side navigation bars,
+which will redirect you to my social networks.
+It will be hidden unless and until you hover the mouse on them.
+They will pop-up until you release the mouse pointer on them.
+Use transition property in the external CSS file for this purpose
+-->
+<div id="hoverNav" >
+	<a href="https://www.facebook.com/arunrajachandarr" id="fb" class="fa fa-facebook"></a>
+	<a href="https://www.linkedin.com/in/arunrajachandar/" id="ln" class="fa fa-linkedin"></a>
+</div>
+<!-- Basically in the below div with class content,
+I have written a brief desc of myself
+And I used tables to have a proper space between each lines and show the content in an organised manner
+The reason that I didn't prefer Ordered/Unordered list is,
+I don't want to keep bullets for each line
+-->
+<div class="loader"></div>
+<div class="contents">
+	<div class="picture">
+	<img src="https://scontent-iad3-1.cdninstagram.com/t51.2885-19/s150x150/23733990_856956704470269_7929952874866409472_n.jpg" alt="Issues with loading"/>
+</div>
+	<div class="content1">
+	<table>
+		<tr><td>This is Arun Rajachandar R.</td></tr>
+		<tr><td>I was born and brought up in Cuddalore, Tamil Nadu.</td></tr>
+		<tr><td>I'm currently working as Technical Consultant on OracleApps domain(which is more prone towards SCM) at Capgemini, Bangalore.</td></tr>
+		<tr><td>I'm always interested in Web Development stuff like Full Stack Development and all, is the reason that I decided to opt for this Intro To Programming Course on Udacity.</td></tr>
+		<tr><td>(<b>Note:</b> If you want to download my CV, then Click on "Download" Button above Or just to see my profile, Click on "Profile" Button)<td></tr>
+		</table>
+	</div>
+	</div>
+
+	<footer> &copy; Arun Rajachandar
+	</footer>
+	<script  src="script.js" async></script>
+	<script src="status.js" async></script>
+
+</body>
+</html>
