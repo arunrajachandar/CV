@@ -44,8 +44,7 @@ body {
 
 .content,
 .contents,
-.contents .content1, 
-.contents .picture {
+.contents .content1 {
   padding: 12px;
   box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.2), 0px 10px 9px 0px rgba(0, 0, 0, 0.21);
 }
