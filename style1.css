@@ -183,7 +183,6 @@ when we keep the cursor on them/when a button is being clicked.
   }
 
   .NavBar-content {
-    float: right;
     background-color: rgba(255,255,255,0.3);
     min-width: 250px;
     padding: 0;
@@ -191,8 +190,8 @@ when we keep the cursor on them/when a button is being clicked.
     position: absolute;
     overflow: auto;
     z-index: 1;
-    right: 3.5px;
   }
+
 
   .NavBar-content a {
       display: block;
@@ -481,6 +480,10 @@ overflow-x: auto;
   .NavBar {
     margin-left: 80%;
   }
+  .NavBar-content{
+    float: right;
+    right: 3.5px;
+  }
 
 }
 @media only screen and (max-width: 1166px) and (orientation: landscape) {
@@ -496,7 +499,12 @@ overflow-x: auto;
 
   }
   .NavBar {
-    margin-left: 80%;
+    margin-right: 80%;
   }
+  .NavBar-content{
+    float: left;
+    left: 3.5px;
+  }
+
 
 }
