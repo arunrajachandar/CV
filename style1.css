@@ -42,13 +42,13 @@ body {
 
 .content,
 .contents .content1 {
+  padding: 12px;
   box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.2), 0px 10px 9px 0px rgba(0, 0, 0, 0.21);
 }
 
-.content,
-.contents .content1 {
-padding: 12px;
-}
+
+
+
 
 .tabNavBar .links,
 .tabNavBar,
@@ -88,11 +88,16 @@ table,
 .tabNavBar button {
   background-color: inherit;
   opacity: inherit;
-  padding: 14px 14px;
-  width: 100%;
+  padding: 14px;
   border: none;
   outline: none;
   text-align: justify;
+}
+
+.tabSideNavBar button,
+.NavBar-content a,
+.headings {
+width: 100%;
 }
 
 .tabSideNavBar button,
@@ -174,6 +179,7 @@ when we keep the cursor on them/when a button is being clicked.
       display: inline-block;
       width: auto;
       overflow: visible;
+      margin-left: 91%;
   }
 
   .NavBar-content {
@@ -185,6 +191,7 @@ when we keep the cursor on them/when a button is being clicked.
     position: absolute;
     overflow: auto;
     z-index: 1;
+    right: 3.5px;
   }
 
   .NavBar-content a {
@@ -242,7 +249,7 @@ footer {
   bottom: 0;
   clear: both;
   height: 3em;
-  position: static;
+  position: fixed;
 }
 
 #hoverNav a {
@@ -315,60 +322,88 @@ footer {
     background: #555;
 }
 
-@media only screen and (min-width: 1166px) {
-
-.NavBar {
-  visibility: hidden;
-  display: none;
-}
-
-.contents {
-  margin-top: 5px;
-}
-
-.contents {
-  padding: 4px;
-  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.2), 0px 10px 9px 0px rgba(0, 0, 0, 0.21);
-
-}
-
-
-
-.contents img {
-  margin: 20px 90px;
-  border: 2px;
-  border-style: double;
-  border-color: green;
-  border-radius: 200px;
-  height: 200px;
-  width: 200px;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
-}
-
-.tabNavBar .links {
-  margin: 0;
-  width: 33.1%;
-}
-
-
-.tabSideNavBar,
-.contents .picture  {
-  width: 29.5%;
-  padding: 0;
-  background-color: white;
-  float: left;
-}
-
-
-
-
-/* Style the tab content */
-
 .content,
-.content1 {
-  width: 68.3%;
-  margin-left: 31%;
+.contents .content1 {
+padding: 12px;
+
 }
+
+
+
+
+@media only screen and (min-width: 1166px) {
+  .content {
+    width: 100%;
+
+    max-height: 400px;
+    overflow: auto;
+  }
+  .NavBar {
+    visibility: hidden;
+    display: none;
+  }
+
+
+
+
+  .contents {
+    padding: 4px;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.2), 0px 10px 9px 0px rgba(0, 0, 0, 0.21);
+    margin-top: 5px;
+    bottom: 0;
+
+  }
+
+
+
+  .contents img {
+    margin: 120px 90px;
+    border: 2px;
+    border-style: double;
+    border-color: green;
+    border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
+  }
+
+  .tabNavBar .links {
+    margin: 0;
+    width: 33.1%;
+  }
+
+
+  .tabSideNavBar,
+  .contents .picture  {
+    width: 30%;
+    padding: 0;
+    background-color: white;
+    float: left;
+  }
+
+
+
+  /* Style the tab content */
+
+  .content,
+  .content1 {
+    width: 68.3%;
+    margin-left: 31%;
+  }
+
+  .contents .content1 {
+    margin-bottom: 205px;
+    margin-top: 100px;
+
+  }
+
+
+  .contents,
+  .contents .content1,
+  .main,
+  .content {
+    box-sizing: border-box;
+  }
 
 
 
@@ -376,75 +411,66 @@ footer {
 
 @media only screen and (max-width: 1166px) {
 
+  .contents img {
+    margin-left: 37%;
+    border: 2px;
+    border-style: double;
+    border-color: green;
+    border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
+
+  }
+
+
+  .tabNavBar .links {
+    margin: 0;
+    width: 100%;
+
+  }
+  .tabSideNavBar{
+    visibility: hidden;
+    display: none;
+  }
+
 .contents {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-}
-@media only screen and (max-width: 1166px) and (orientation: landscape) {
-    /* For mobile phones: */
-    .tabSideNavBar{
-      visibility: hidden;
-      display: none;
-    }
-
-
-
-.contents img {
-  margin-left: 30%;
-  border: 2px;
-  border-style: double;
-  border-color: green;
-  border-radius: 200px;
-  height: 200px;
-  width: 200px;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
-
+.main {
+ margin-top: 1px;
 }
 
+.NavBar-content {
+overflow-x: auto;
+}
+
+.contents,
+.contents .content1,
+.main {
+  top: 2px;
+  bottom: 0;
+
+}
 
 .contents .content1 {
+  box-sizing: content-box;
+  margin-bottom: 56px;
   margin-top: 25px;
-}
-
-.tabNavBar .links {
-  margin: 0;
-}
-
-
-
 
 }
 
-@media only screen and (max-width: 1166px) and (orientation: portrait) {
-    /* For mobile phones: */
-    .tabSideNavBar{
-      visibility: hidden;
-      display: none;
-    }
-
-
-
-.contents img {
-  margin-left: 25%;
-  border: 2px;
-  border-style: double;
-  border-color: green;
-  border-radius: 200px;
-  height: 200px;
-  width: 200px;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
-
+.contents,
+.main {
+  box-sizing: border-box;
 }
 
 
-.contents .content1 {
-  margin-top: 25px;
+.main .content {
+    margin-bottom: 56px;
 }
 
-.tabNavBar .links {
-  margin: 0;
-}
 
 
 
