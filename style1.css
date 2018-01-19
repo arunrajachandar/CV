@@ -179,7 +179,7 @@ when we keep the cursor on them/when a button is being clicked.
       display: inline-block;
       width: auto;
       overflow: visible;
-      margin-left: 91%;
+
   }
 
   .NavBar-content {
@@ -477,6 +477,9 @@ overflow-x: auto;
     width: 200px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
 
+  }
+  .NavBar {
+    margin-left: 80%;
   }
 
 }
