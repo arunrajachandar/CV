@@ -65,6 +65,7 @@ footer {
   margin: 8px;
 }
 
+
 table,
 .content,
 .content1,
@@ -104,9 +105,13 @@ table,
 .NavBar-content a,
 .tabNavBar button {
   font-size: 17px;
-  transition: 0.12s;
   cursor: pointer;
 }
+.tabSideNavBar button,
+.tabNavBar button {
+  transition: 0.12s;
+}
+
 /* What The below two rules do is,
 It'll change the color of the button
 when we keep the cursor on them/when a button is being clicked.
@@ -121,6 +126,44 @@ when we keep the cursor on them/when a button is being clicked.
 .NavBar-content a.active,
 .tabNavBar button.active {
   background-color: #ccc;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #008000;
+    opacity: 0.9;
+    margin: 4.5px;
+}
+
+.NavBar-content a,
+.bar1,
+.bar2,
+.bar3 {
+  transition: 0.4s;
+}
+
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.change .bar2 {
+	opacity: 0;
+    margin: 5px 3px 5px;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* Style the tab content */

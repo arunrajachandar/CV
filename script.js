@@ -17,7 +17,9 @@ function openPage(evt, option) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-function myFunction() {
+function myFunction(x) {
+  x.classList.toggle("change");
+
     document.getElementById("myNavBar").classList.toggle("show");
 }
 
@@ -35,3 +37,5 @@ window.onclick = function(event) {
     }
   }
 }
+
+//transition for collapse and expand button

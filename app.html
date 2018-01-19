@@ -22,7 +22,13 @@
 		<button  class="links" onclick="alert('You are pressing the button for the same page')">Profile</button>
 		<button class="links" onclick="window.location.href='https://drive.google.com/uc?export=download&id=0B8Q5sPXAZVWHNFJPSlVPTUxDb28'">Download</button>
 		<div class="NavBar">
-<button onclick="myFunction()" class="SideNavButton links">NavBar</button>
+
+<button onclick="myFunction(this);" class="container SideNavButton links">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+</button>
+
   <div id="myNavBar" class="NavBar-content">
 			<a href="#" onclick="openPage(event, 'Education')" id="defaultOpen">Education</a>
 			<a href="#" onclick="openPage(event, 'Projects')">Projects</a>
@@ -32,6 +38,7 @@
 			<a href="#" onclick="openPage(event, 'Personal-Info')">Personal Info</a>
   </div>
 </div>
+
 	</div>
 	<!--
 	This tabSideNavBar represents the side navigation buttons,
