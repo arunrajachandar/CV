@@ -34,10 +34,7 @@ body {
   background-color: #f1f1f1;
 }
 /*This is where the heading-wise content is displayed*/
-.contents,
-.main {
-  margin-top: 5px;
-}
+
 
 .content  {
   text-align: left;
@@ -326,6 +323,10 @@ footer {
 }
 
 .contents {
+  margin-top: 5px;
+}
+
+.contents {
   padding: 4px;
   box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.2), 0px 10px 9px 0px rgba(0, 0, 0, 0.21);
 
@@ -373,6 +374,13 @@ footer {
 
 }
 
+@media only screen and (max-width: 1166px) {
+
+.contents {
+  margin-top: 30px;
+}
+
+}
 @media only screen and (max-width: 1166px) and (orientation: landscape) {
     /* For mobile phones: */
     .tabSideNavBar{
