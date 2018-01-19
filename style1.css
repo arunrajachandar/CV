@@ -34,7 +34,8 @@ body {
   background-color: #f1f1f1;
 }
 /*This is where the heading-wise content is displayed*/
-.contents {
+.contents,
+.main {
   margin-top: 5px;
 }
 
@@ -43,10 +44,13 @@ body {
 }
 
 .content,
-.contents,
 .contents .content1 {
-  padding: 12px;
   box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.2), 0px 10px 9px 0px rgba(0, 0, 0, 0.21);
+}
+
+.content,
+.contents .content1 {
+padding: 12px;
 }
 
 .tabNavBar .links,
@@ -321,17 +325,22 @@ footer {
   display: none;
 }
 
+.contents {
+  padding: 4px;
+  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.2), 0px 10px 9px 0px rgba(0, 0, 0, 0.21);
+
+}
 
 
 
 .contents img {
-  margin: 20px 50px;
+  margin: 20px 90px;
   border: 2px;
   border-style: double;
   border-color: green;
-  border-radius: 70%;
-  height: 70%;
-  width: 70%;
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
 }
 
