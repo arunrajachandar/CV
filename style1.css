@@ -468,6 +468,7 @@ overflow-x: auto;
 
 @media only screen and (max-width: 1166px) and (orientation: portrait) {
   .contents img {
+    margin-left: 37%;
     border: 2px;
     border-style: double;
     border-color: green;
