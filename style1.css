@@ -463,9 +463,7 @@ overflow-x: auto;
   float: right;
   right: 3.5px;
 }
-.NavBar {
-  margin-left: 82%;
-}
+
 
 
 
@@ -483,7 +481,9 @@ overflow-x: auto;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
 
   }
-
+  .NavBar {
+    margin-left: 82%;
+  }
 
 }
 @media only screen and (max-width: 1166px) and (orientation: landscape) {
@@ -498,6 +498,8 @@ overflow-x: auto;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 3px 10px 20px 4px rgba(0, 0, 0, 0.21);
 
   }
-
+  .NavBar {
+    margin-left: 90%;
+  }
 
 }
