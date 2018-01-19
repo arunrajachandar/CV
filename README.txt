@@ -1,13 +1,13 @@
-Basically, the topic that I have taken is Profile Page
+ Profile Page
 
 #1
-Homepage is the start page,
-I have written a brief description about me
+Homepage is the start page
+In which I have written a brief description about me
 
 #2
 app is the main,
 where you can hover over the tab options
-I have put all my details in a categorized manner using tab options and all
+In which I have put all my details in a categorized manner using tab options and all
 
 #3
 on top of page, you can see a download button,
