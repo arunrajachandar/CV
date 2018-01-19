@@ -1,4 +1,3 @@
-
 function openPage(evt, option) {
   var i, content, links;
   content = document.getElementsByClassName("content");
@@ -18,9 +17,10 @@ function openPage(evt, option) {
 document.getElementById("defaultOpen").click();
 
 function myFunction(x) {
-  x.classList.toggle("change");
-
     document.getElementById("myNavBar").classList.toggle("show");
+    x.classList.toggle("change");
+
+
 }
 
 // Close the NavBar if the user clicks outside of it
